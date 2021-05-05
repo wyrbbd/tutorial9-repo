@@ -34,6 +34,25 @@ header-includes:
 \clearpage
 
 # Section 1
+```{r , echo = FALSE, message = FALSE, warning = FALSE}
+# Libraries
+library(tinytex)
+library(tidyverse)
+library(readr)
+library(kableExtra)
+library(bookdown)
+offence <- read_csv("Data/Data_Tables_Criminal_Incidents_Visualisation_Year_Ending_December_2019.csv")
+
+```
+
+```{r ???}
+offence1 <- offence %>%
+ filter(`Offence Division` %in% c( 'C Drug offences' ))
+
+
+knitr::kable(head(offence1),caption = 'Drug offences',
+             booktabs = TRUE)
+```
 
 
 \clearpage
