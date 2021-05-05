@@ -39,14 +39,14 @@ header-includes:
 \clearpage
 
 # Section 2
-```{r readdata}
-dat <- read.csv(here::here("Data/Assignment3_data.csv"))
-```
+
 
 \clearpage
 
 # Section 3
-
+```{r readdata}
+dat <- read.csv(here::here("Data/Assignment3_data.csv"))
+```
 
 \clearpage
 
